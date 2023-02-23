@@ -219,7 +219,7 @@ img{
 
 
 
-.scrolltop{
+.scrollTop{
   position: fixed;
   right: 1rem;
   bottom: -20%;
@@ -234,11 +234,11 @@ img{
   visibility: hidden;
 }
 
-.scrolltop:hover{
+.scrollTop:hover{
   background-color: var(--first-color);
 }
 
-.scrolltop__icon{
+.scrollTop__icon{
   font-size: 2rem;
   color: var(--first-color-lighten);
 }
@@ -292,8 +292,6 @@ img{
 
 .home__img{
   position: absolute;
-  right: 0;
-  bottom: 0;
 }
 
 .home__img img{
@@ -310,7 +308,7 @@ img{
   font-size: 1.3rem;
   margin-bottom: var(--mb-2);
   color: var(--first-color-lighten);
-  *position: absolute;
+  position: absolute;
 }
 
 .home__social-icon:hover{
@@ -397,7 +395,7 @@ img{
   color: var(--first-color-light)
 }
 
-.quialification__work{
+.qualification__work{
   display: block;
 }
 
@@ -474,6 +472,13 @@ img{
   border: none;
 }
 
+.contact__description{
+  text-align: justify;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+
 
 
 .footer{
@@ -505,12 +510,13 @@ img{
 
 @media screen and (min-width: 576px) {
   .home__img{
-    width: 330px;
+    width: 2450px;
+    max-width: 100%;
   }
 
   .about__container,
   .qualification__container{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2fr);
   }
 
   .contact__form{
@@ -569,7 +575,7 @@ img{
     margin-bottom: 0;
   }
   .home__img img{
-    width: 440px;
+    width: 2450px;
   }
 
   .about__description{

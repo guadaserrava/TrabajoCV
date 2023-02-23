@@ -13,7 +13,7 @@ const showMenu = (toggleId,navId) =>{
 
 
 
-const navLink = document.querySelectorAll('.nac__link')
+const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
     const NavMenu = document.getElementById('nav-menu')
@@ -51,10 +51,5 @@ window.addEventListener('scroll', scrollHeader)
 
 
 
-function scrollTop(){
-    const scrollTop = document.getElementById('scroll-top')
-    if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else header.classTop.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollTop)
 
 
